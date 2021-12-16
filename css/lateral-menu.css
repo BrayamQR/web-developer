@@ -1,0 +1,87 @@
+#lateral-menu{
+    top: 50px;
+    left: 0;
+    position: fixed;
+    z-index: 90;
+    color: #fff;
+}
+#lateral-menu .btn-right-menu{
+    left: 10px;
+    top: 10px;
+    color: #999898;
+    
+}
+#lateral-menu .btn-left-menu{
+    right: 10px;
+    top: 10px;
+    color: #c7c7c7;
+}
+#lateral-menu .fas{
+    
+    position: absolute;
+    cursor: pointer;
+    font-size: 20px;
+}
+#btn-lateral:checked ~ .cont-lateral{
+    opacity: 1;
+    visibility: visible;
+}
+#lateral-menu .cont-lateral{
+    position: absolute;
+    background: rgba(0, 0,0,.4);
+    width: 100%;
+    height: 100vh;
+    transition: all .5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-lateral{
+    display: none;
+}
+.content-lateral{
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 280px;
+    background: rgba(2, 18, 49,0.9);
+    height: calc(100% - 50px);
+    position: relative;
+    transition: all .5s;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.content-lateral::-webkit-scrollbar{
+    width: 7px;
+}
+.content-lateral::-webkit-scrollbar-thumb{
+    background: #c7c7c7;
+    border-radius: 10px;
+}
+
+.content-lateral nav{
+    transform: translateY(50px);
+    
+}
+.content-lateral nav p{
+    color: #c7c7c7;
+    height: 50px;
+    padding: 15px 10px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    font-size: 15px;
+    font-weight: bold;
+}
+.content-lateral nav a{
+    display: block;
+	color: #c7c7c7;
+	height: 50px;
+	text-decoration: none;
+	padding: 17px 25px;
+	transition: all 400ms ease;
+    border-left: 5px solid  transparent;
+    font-size: 14px;
+}
+.content-lateral nav a:hover{
+    border-left: 5px solid  #c7c7c7;
+    background: rgba(21,51,111,.7);
+}

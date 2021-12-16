@@ -1,0 +1,78 @@
+#information{
+    background: rgba(1,7,28,0.9);
+    padding: 5px;
+    color: #fff;
+    margin-bottom: 0;
+}
+#information .content-information{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.inform-ubication{
+    line-height: 30px;
+    text-align: justify;
+}
+.content-information .information{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255, .6);
+    margin-bottom: 20px;
+    
+}
+.content-information .information h5, .content-information .information i{
+    width: 50%;
+    margin: auto;
+    font-size: 15px;
+}
+.content-information .information h5{
+    text-align: left;
+}
+.content-information .information i{
+    text-align: right;
+}
+.inform-contact{
+    display: flex;
+    padding: 10px;
+}
+.inform-contact i{
+    
+    background: #fff;
+    color: rgba(1,7,28,0.9);
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.content-information a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    margin: auto 0;
+}
+.inform-menu{
+    margin-left: 10px;
+}
+.inform-menu a{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+@media(min-width: 768px){
+    #information .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #information .content-information{
+        width: 40%;
+        margin-left: 10px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+}
+@media(min-width: 1024px){
+    #information .content-information{
+        width: 25%;
+
+    }
+}

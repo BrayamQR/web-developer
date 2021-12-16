@@ -1,0 +1,72 @@
+#horario h2{
+    font-size: 20px;
+    text-align: center;
+    margin: 15px auto;
+    padding: 15px 10px;
+    background: rgba(2, 18, 49,0.9);
+    color:#fff;
+    border-radius: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table td, table th{
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 15px;
+}
+table th{
+    background: rgba(21,51,111,.7);
+    color: #fff;
+}
+table tr:hover{
+    background: #f5f5f5;
+}
+@media(max-width: 768px){
+    table thead {
+        display: none;
+    }
+    table table tbody, table tr, table td{
+        display: block;
+        width: 100%;
+    }
+    table tr{
+        margin-bottom: 15px;
+    }
+    table td{
+        text-align: right;
+        padding-left: 40%;
+        position: relative;
+    }
+    table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 30%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+    .rcab{
+        background: rgba(21,51,111,.6);
+        color: #fff;
+    }
+}
+@media (min-width: 480px){
+    #horario h2{
+        width: 400px;
+    }
+}
+@media (min-width: 768px) {
+    table {
+        width: auto;
+    }
+}
+@media (min-width: 1024px){
+    #horario h2{
+        font-size: 25px;
+        
+    }
+}

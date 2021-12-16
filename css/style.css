@@ -1,0 +1,267 @@
+@import url(menu.css);
+@import url(slider.css);
+@import url(banner.css);
+@import url(blog.css);
+@import url(information.css);
+@import url(horario.css);
+@import url(all.min.css);
+@import url(lateral-menu.css);
+@import url(modal.css);
+*{ 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+p{
+	margin-top: 5px;
+	font-size: 14px;
+}
+body{
+	font-family: sans-serif;
+
+}
+body::-webkit-scrollbar{
+	width: 7px;
+}
+body::-webkit-scrollbar-thumb{
+    background: #01071c;
+	border-radius: 10px;
+
+}
+header{
+	width: 100%;
+	height: 50px;
+	background: #021231;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+.container{
+	width: 98%;
+	margin: auto;
+}
+#logo{
+	max-width: 50px;
+	float: left;
+	margin-right: 10px;
+}
+h1{
+	float: left;
+}
+header .container{
+	display: table;
+}
+section{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+#welcome{
+	text-align: center;
+}
+#welcome h2{
+	font-size: 20px;
+	margin-bottom: 20px;
+	color: #2150af;
+}
+#welcome p{
+	font-size: 20px;
+	padding: 10px;
+}
+#welcome .line{
+	margin: auto;
+	width: 100%;
+	max-width: 550px;
+	height: 5px;
+	padding: 5px;
+	background: rgba(33, 80, 175, .4);
+}
+#plan .container, #practicas .container, #titulacion .container, #tpagos .container, #modulo .content-modulo, #teacher .container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.tittle-tpagos, .tittle-practicas, .tittle-titulacion, .tittle-modulo{
+    text-align: center;
+    margin: 15px auto;
+    padding: 20px;
+    background: rgba(2, 18, 49,0.9);
+    max-width: 400px;
+    width: 98%;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+}
+footer{
+	background: #021231;;
+	margin-top: -5px;
+	color: #fff;
+	width: 100%;
+	height: auto;
+}
+footer p{
+	padding: 15px;
+}
+.content-insti{
+    width:100%;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+	padding: 30px 5px;
+}
+
+.content-insti img{
+    width: 200px;
+    display: block;
+	margin: auto;
+}
+.content-insti .img-aula{
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,.5);
+
+}
+.content-insti .img-right{
+    display: none;
+}
+.final{
+    border: none;
+}
+.info-insti{
+    margin-bottom: 25px;
+}
+.content-insti h2{
+    text-align: center;
+    color: #2150af;
+    font-size: 20px;
+    margin: 25px auto;
+}
+.content-insti p{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+	margin: 15px
+}
+.content-insti iframe{
+	display: block;
+	width: 100%;
+	height: 200px;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,.5);
+}
+.content-insti h3{
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;
+	margin: 15px 0;
+	color: #2150af;
+}
+.content-insti .tittle-campus{
+	font-size: 20px;
+	font-weight: 400;
+	background: rgba(2, 18, 49,0.9);
+	padding: 20px;
+	border-radius: 10px;
+	color: #fff;
+	display: block;
+}
+.laboratory-img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	box-shadow: 0px 15px 25px rgba(0,0,0,.5);
+}
+.content-insti h4{
+	font-size: 15px;
+	text-align: center;
+	margin: 15px 0;
+	color: #2150af;;
+}
+.info-insti{
+	padding: 10px;
+	margin: auto;
+}
+.info-insti ul{
+	margin-left: 30px;
+	margin-top: 15px;
+	line-height: 25px;
+	font-size: 15px;
+}
+#teacher .cont-modal img{
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin: auto;
+	border-radius: 50%;
+	border: 5px solid rgba(1,7,28,0.6);
+	margin-bottom: 15px;
+}
+
+@media (min-width: 480px){
+	#welcome h2{
+		font-size: 25px;
+	}
+	.content-insti iframe{
+		height: 300px;
+	}
+	.content-insti .tittle-campus{
+		width: 400px;
+	}
+}
+@media (min-width:  768px){
+	#welcome h2{
+		font-size: 30px;
+	}
+	#welcome p{
+		font-size: 25px;
+		padding: 10px;
+	}
+	#welcome .line{
+		width: 70%;
+	}
+	.content-dflex{
+        display: flex;
+    }
+	.info-insti{
+		width:50%;
+	}
+	.content-insti .img-aula{
+		width: 300px;
+		height: 250px;
+	}
+	.content-insti iframe{
+		height: 400px;
+	}
+}
+@media (min-width: 1024px){
+	.container{
+		width: 1000px;
+	}
+	footer{
+		height: 50px;
+	}
+	.content-insti h2{
+		font-size: 30px;
+	}
+	.content-insti .tittle-campus{
+		font-size: 25px;
+	}
+	.info-insti{
+		width:60%;
+	}
+    .content-insti .img-left{
+        display: none;
+    }
+    .content-insti .img-right{
+        display: inline;
+    }
+	.content-insti iframe{
+		width: 800px;
+		height: 600px;
+	}
+	.tittle-tpagos, .tittle-practicas, .tittle-titulacion, .tittle-modulo{
+        font-size: 25px;
+    }
+}
